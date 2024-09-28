@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
+    <PublishAot>true</PublishAot>
     <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>image_go_whatever</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -10,6 +11,16 @@
 
   <ItemGroup>
     <PackageReference Include="Raylib-CSharp" Version="4.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Ressources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Ressources\Inter.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
